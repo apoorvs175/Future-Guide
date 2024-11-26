@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <a href="../" style="text-decoration: none;">
+                <span class="logo">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-regular fa-circle"></i>
+                </span>
+            </a>
+            <h1><a href="./index.html" style="color: white; text-decoration: none;" onmouseover="this.style.color='blue'" onmouseout="this.style.color='white'">AID Centre</a></h1>
+            <div class="sub-nav-bar">
+                <a href="../Nav Page/aboutus.html"> About Us</a>
+                <a href="../Nav Page/features.html"> Features</a>
+                <a href="../Nav Page/captain.html"> Captain</a>
+                <a href="../Nav Page/knowledge.html"> Knowledge</a>
+                <a href="../Nav Page/contact.html"> Contact Us</a>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="../Images/home 02 banner .png" alt="Banner"> 
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <div class="container-heading">
+                <h1> Welcome to the Students</h1>
+                <h2 class="heading">AID CENTRE<span></span></h2>
+            </div>
+            <div class="button-for-more">
+                <a href="../Main Pages/schollarship.html"><button type="button">Scholarships</button></a>
+                <a href="../Main Pages/institutes.html"><button type="button">Institutes</button></a>
+                <a href="../Main Pages/project.html"><button type="button">Projects</button></a>
+            </div>
+        </div>
+        <div class="min-heading">
+            <section>
+                <h3 id="min-heading-topic-1"> Empower your</h3>
+                <h3 id="min-heading-topic-2"> Education</h3>
+            </section>
+            <p>Discover a one-stop portal for students aiming for higher education excellence! Access top colleges, tailored scholarships, and innovative projects. Our intuitive platform empowers you to make informed choices, ensuring a seamless experience. Whether in high school or graduate studies, start unlocking your academic potential today!</p>    
+        </div>
+    </div>
+
+    <!-- ----------------------- Scholarship banner ----------- -->
+    <div class="banner">
+        <img src="./Images/Scholarship Banner.png" alt="Banner">
+    </div>
+
+    <!-- ------------------ Scholarship data code Start ------------------- -->
+    <div class="scholarship_data">
+        <div class="scholarshipHead">
+            <h1>Scholarship Guide</h1>
+        </div>
+
+        <!-- Filter Dropdowns -->
+        <div id="filterContainer">
+            
+            <div class="level01" id="typeofscholarship">
+                <label  id="leftslide"  for="typeFilter">Type of Scholarship:</label>
+            <select class="justslider" id="typeFilter">
+                <option value="">Select Type</option>
+                <option value="Merit-based">Merit-based</option>
+                <option value="Need-based">Need-based</option>
+                <option value="Sports">Sports</option>
+                <option value="Minority">Minority</option>
+                <option value="Other">Other</option>
+                <option value="All">All</option>
+            </select>
+
+            <label id="leftslide" for="genderFilter">Gender:</label>
+            <select class="justslider" id="genderFilter">
+                <option value="">Select Gender</option>
+                <option value="Female"> Only for Female</option>
+                <option value="All">All</option>
+            </select>
+
+
+            </div>
+
+            <div class="level02">
+                <label id="leftslide" for="incomeFilter">Financial Income:</label>
+                <select  class="justslider" id="incomeFilter">
+                    <option value="">Select Income Range</option>
+                    <option value="150000">Below ₹1,50,000</option>
+                    <option value="200000">Below ₹2,00,000</option>
+                    <option value="250000">Below ₹2,50,000</option>
+                    <option value="300000">Below ₹3,00,000</option>
+                    <option value="400000">Below ₹4,00,000</option>
+                    <option value="0">All</option>
+                </select>
+    
+                <label id="leftslide" for="qualificationFilter">Qualification:</label>
+                <select class="justslider" id="qualificationFilter">
+                    <option value="">Select Qualification</option>      
+                              <option value="High School">High School</option>
+                    <option value="Undergraduate">Undergraduate</option>
+                    <option value="Postgraduate">Postgraduate</option>
+                    <option value="PhD">PhD</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="">All</option>
+                </select>
+
+            <!-- Clear Filters Button -->
+            <button  id="clearFiltersBtn" type="button">Reset All</button>
+
+
+            </div>
+
+
+            
+        
+        </div>
+
+        <table id="scholarshipTable">
+            <thead>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Scholarship</th>
+                    <th>Educational Qualification</th>
+                    <th>Type</th>
+                    <th>Gender</th>
+                    <th>Description</th>
+                    <th>Eligibility Based on Educational Criteria</th>
+                    <th>Eligibility Based on Family Income</th>
+                    <th>Application Start</th>
+                    <th>Application Deadline</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button id="prevBtn" onclick="prevPage()">Previous</button>
+            <button id="nextBtn" onclick="nextPage()">Next</button>
+        </div>
+    </div>
+    <!-- ------------------ Scholarship data code end ------------------- -->
+
+    <!-- Footer starts -->
+    <footer class="new_footer">
+        <div class="new_footer_top ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                            <p>Don’t miss any updates of our new templates and extensions.!</p>
+                            <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                <div id="heading-of-mailbox">
+                                    <div class="container-heading">
+                                        <div class="search-box">
+                                            <input type="text" placeholder="Search">
+                                        </div>
+                                    </div>
+                                    <div class="button-for-more">
+                                        <a href="../Main Pages/schollarship.html"><button type="button">Scholarships</button></a>
+                                        <a href="../Main Pages/institutes.html"> <button type="button">Institutes</button></a>
+                                        <a href="../Main Pages/project.html"><button type="button">Projects</button></a>
+                                    </div>
+                                </div>
+                                <p class="mchimp-errmessage" style="display: none;"></p>
+                                <p class="mchimp-sucmessage" style="display: none;"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="../Footer Page/company.html">Company</a></li>
+                                <li><a href="#">Android App</a></li>
+                                <li><a href="#">iOS App</a></li>
+                                <li><a href="../Footer Page/privicy.html">Privacy                                <li><a href="../Footer Page/supportpage.html">Support Policy</a></li>
+                                <li><a href="../Footer Page/termsCondition.html">Term &amp; Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Support Team</h3>
+                            <div class="f_social_icon">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-linkedin"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400">2024 All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-5 text-right">
+                        <p>Made in love with <a href="#" target="_blank">Naman Singh</a></p> 
+                    </div> 
+                </div>
+            </div> 
+        </div>
+    </footer>
+    <!-- Footer End -->
+     <script  src="../JS File/schollarship.js" ></script>
+
+</body>
+</html>

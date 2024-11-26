@@ -1,0 +1,154 @@
+
+#hero {
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+#hero h2 {
+    font-size: 50px;
+    margin: 0;
+    color: red;
+}
+#hero h2:hover{
+    color: blue;
+}
+
+#hero p {
+    font-size: 18px;
+}
+
+
+
+section {
+    padding: 40px 20px;
+    animation: slideIn 0.5s ease-in;
+}
+
+main div h2 {
+    font-size: 28px;
+    border-bottom: 2px solid blue; /* Blue underline */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.needred h2{
+    color: red;
+}
+.feature-card, .testimonial-card, .faq-item {
+    background-color: #333; /* Darker card background */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover, .testimonial-card:hover, .faq-item:hover {
+    transform: scale(1.02);
+}
+
+#contact {
+    background-color: #222; /* Darker contact section */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact input, #contact textarea {
+    background-color: #444; /* Darker input fields */
+    color: #fff; /* White text */
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    transition: border-color 0.3s ease;
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #4A90E2; /* Blue border on focus */
+    outline: none;
+}
+
+#contact button[type="submit"] {
+    background-color: #4CAF50; /* Green button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green */
+    transform: scale(1.05);
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    #contact input, #contact textarea {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h2 {
+        font-size: 24px;
+    }
+
+    #hero p {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    #contact input, #contact    #contact input, #contact textarea {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.listing ul li{
+    list-style-type: none;
+    margin-left: 20px;
+    
+}
+.listing ul{
+    margin-top: 20px;
+}

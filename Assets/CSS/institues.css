@@ -1,0 +1,38 @@
+.filters-container {
+    background: black;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filters-container select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 150px;
+}
+
+.filters-container label {
+    font-weight: bold;
+    color: white;
+}
+
+.city-filter{
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.filter-button button{
+    margin-top: 25px;
+    font-size: 15px;
+    margin-left: 60px;
+    height: 40px;
+    width: 150px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.filter-button button:hover{
+    background-color: blue;
+}
